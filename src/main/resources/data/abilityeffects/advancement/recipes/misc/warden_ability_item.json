@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_echo_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:echo_shard"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_sculk_shrieker": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:sculk_shrieker"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "abilityeffects:warden_ability_item"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_echo_shard",
+      "has_sculk_shrieker"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "abilityeffects:warden_ability_item"
+    ]
+  }
+}

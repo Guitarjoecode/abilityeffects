@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": "minecraft:phantom_membrane",
+    "F": "minecraft:feather",
+    "H": "minecraft:heavy_core",
+    "W": "minecraft:breeze_rod"
+  },
+  "pattern": [
+    "FHF",
+    "WEW",
+    "FWF"
+  ],
+  "result": {
+    "id": "abilityeffects:feather_falling_ability_item"
+  }
+}

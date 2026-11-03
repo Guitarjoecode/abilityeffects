@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "abilityeffects:item/wither_ability_item"
+  }
+}

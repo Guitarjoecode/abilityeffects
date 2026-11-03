@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": "minecraft:diamond_pickaxe",
+    "N": "minecraft:netherite_pickaxe",
+    "T": "minecraft:tnt"
+  },
+  "pattern": [
+    "TDT",
+    "DND",
+    "TDT"
+  ],
+  "result": {
+    "id": "abilityeffects:mining_ability_item"
+  }
+}

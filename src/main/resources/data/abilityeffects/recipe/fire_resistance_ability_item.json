@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": "minecraft:blaze_rod",
+    "F": "minecraft:flint_and_steel",
+    "M": "minecraft:magma_cream"
+  },
+  "pattern": [
+    "BFB",
+    "FMF",
+    "BFB"
+  ],
+  "result": {
+    "id": "abilityeffects:fire_resistance_ability_item"
+  }
+}

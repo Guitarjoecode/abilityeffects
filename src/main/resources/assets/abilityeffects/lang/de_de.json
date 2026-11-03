@@ -1,0 +1,68 @@
+{
+  "command.abilityeffects.help.header": "§6§l=== Offizieller AbilityEffects-Leitfaden ===",
+  "command.abilityeffects.help.intro": "§7Willkommen! Diese Mod verleiht dir einzigartige Fähigkeiten durch spezielle Gegenstände. Sobald sie benutzt werden, sind sie dauerhaft an dich gebunden, bis du sie fallen lässt oder verlierst.",
+
+  "command.abilityeffects.help.section.mechanics": "§e§l1. Kernmechaniken & Steuerung:",
+  "command.abilityeffects.help.keybind1": " §b• [%s-Taste] §7- Löst den aktiven Spezialeffekt deiner §aersten aktiven Fähigkeit§7 aus.",
+  "command.abilityeffects.help.keybind2": " §b• [%s-Taste] §7- Löst den aktiven Spezialeffekt deiner §azweiten aktiven Fähigkeit§7 aus (öffnet z. B. das Spieler-Tracker-Menü).",
+  "command.abilityeffects.help.pvp_drop": " §b• PvP-Todesstrafe §7- Wenn du von einem anderen Spieler getötet wirst, verlierst du §czufällig eine aktive Fähigkeit§7 als Beute-Drop!",
+  "command.abilityeffects.help.void_save": " §b• Void-Rückerstattung §7- Wenn ein Fähigkeits-Gegenstand in das Void (die Leere) fällt, wird der globale Server-Zähler automatisch zurückerstattet, sodass er erneut hergestellt werden kann.",
+
+  "command.abilityeffects.help.section.commands": "§e§l2. Verfügbare Befehle:",
+  "command.abilityeffects.help.cmd_craftable": " §b• /ability craftable §7- Öffnet ein Menü, das die globalen Gegenstandslimits und verbleibenden Herstellungsmöglichkeiten anzeigt.",
+  "command.abilityeffects.help.cmd_drop": " §b• /ability drop <Fähigkeit> §7- Deaktiviert eine aktive Fähigkeit sicher und gibt sie als Gegenstand zurück.",
+  "command.abilityeffects.help.cmd_help": " §b• /ability help §7- Zeigt diese umfassende technische Dokumentation an.",
+
+  "command.abilityeffects.help.section.abilities": "§e§l3. Technischer Index der Fähigkeiten:",
+  "command.abilityeffects.help.ability.meta": "§6▶ §l%s §r§7[Abklingzeit: §e%ss§7 | Globaler Vorrat: §a%s/%s§7]",
+
+  "command.abilityeffects.help.ability.speed_ability.desc": "   §7- §ePassiv: §7+50% Bewegungsgeschwindigkeit.\n   §7- §aAktiv: §7Katapultiert dich mit einem eigenen Soundeffekt in Blickrichtung nach vorne.",
+  "command.abilityeffects.help.ability.fire_resistance_ability.desc": "   §7- §ePassiv: §7Komplette Immunität gegen jeglichen Feuer- und Lavaschaden.\n   §7- §aAktiv: §7Löst eine gewaltige Explosion der Stärke 5.0 aus (kein Schaden an dir selbst) und lässt alles Wasser im Umkreis von 10 Blöcken verdampfen.",
+  "command.abilityeffects.help.ability.health_boost_ability.desc": "   §7- §ePassiv: §7Verleiht dir dauerhaft +25% maximale Herzen.\n   §7- §aAktiv: §7Heilt dich sofort um 4 volle Herzen (8.0 LP).",
+  "command.abilityeffects.help.ability.feather_falling_ability.desc": "   §7- §ePassiv: §7Hebt jeglichen Fallschaden komplett auf.\n   §7- §aAktiv: §7Katapultiert dich mit einem Windstoß hoch in die Luft.",
+  "command.abilityeffects.help.ability.strength_ability.desc": "   §7- §ePassiv: §7Erhöht den Basis-Angriffsschaden dynamisch um +3.0.\n   §7- §aAktiv: §7Verleiht für 10 Sekunden den Effekt Stärke II.",
+  "command.abilityeffects.help.ability.mining_ability.desc": "   §7- §ePassiv: §7+30% Effizienz beim Abbauen.\n   §7- §aAktiv: §7Aktiviert Sofort-Abbau für 10 Sekunden (gilt nicht für Obsidian/Bedrock).",
+  "command.abilityeffects.help.ability.warden_ability.desc": "   §7- §ePassiv: §7Dämpft deine Schritte komplett; blockiert alle Block-Vibrationen und Sculk-Impulse.\n   §7- §aAktiv: §7Feuert einen verheerenden Ultraschall-Schrei bis zu 20 Blöcke weit ab, der 13.0 Schaden verursacht und Gegner zurückstößt.",
+  "command.abilityeffects.help.ability.wither_ability.desc": "   §7- §ePassiv: §7Angriffe auf Ziele haben eine Chance von 10%, für 20 Sekunden den Wither-Effekt zu verursachen.\n   §7- §aAktiv: §7Feuert eine horizontale Salve von 4 gefährlichen Wither-Skelettschädeln gleichzeitig ab.",
+  "command.abilityeffects.help.ability.pull_ability.desc": "   §7- §ePassiv: §7Angriffe auf Spieler haben eine Chance von 10%, diese zu dir heranzuziehen.\n   §7- §aAktiv: §7Zieht 15 Sekunden lang kontinuierlich alle Spieler in einem riesigen Umkreis von 50 Blöcken zu deiner genauen Position.",
+  "command.abilityeffects.help.ability.tracker_ability.desc": "   §7- §ePassiv: §7Das Angreifen eines Spielers belegt diesen automatisch für 60 Sekunden mit dem Leuchten-Effekt.\n   §7- §aAktiv: §7Öffnet ein Menü zur Auswahl eines Online-Spielers, das dessen Koordinaten anzeigt und einen dynamischen roten Laserstrahl direkt zu ihm projiziert.",
+  "command.abilityeffects.help.ability.ender_dragon_ability.desc": "   §7- §ePassiv: §7Das Trinken von Drachenatem verleiht massive, dynamische Stärkungen (Regeneration, Resistenz, Feuerresistenz, Absorber) und gibt die Glasflasche zurück.\n   §7- §aAktiv: §7Beschwört für 10 Sekunden einen reitbaren Enderdrachen, der über deine Blickrichtung gesteuert wird.",
+
+  "command.abilityeffects.help.section.info": "§e§l5. Rezepte, Regeln & Discord:",
+  "command.abilityeffects.help.recipes": " §b• Rezepte §7- Alle Herstellungsrezepte findest du auf unserem Discord-Server.",
+  "command.abilityeffects.help.discord": " §b• Discord §7- Nutze §a/discord§7, um den Einladungslink zu erhalten.",
+  "command.abilityeffects.help.rules": " §b• Regeln §7- Nutze §a/rules§7, um die offiziellen Server-Richtlinien zu lesen.",
+
+
+
+  "warning.abilityeffects.no_client_mod_1": "§c§l[Warnung] §eDu hast die clientseitige Mod nicht installiert",
+  "warning.abilityeffects.no_client_mod_2": "§7Ohne sie §ckannst du deine aktive Fähigkeiten-Anzeige (HUD) nicht sehen§7 und §ckeine Tasten für Spezialfähigkeiten nutzen§7.",
+  "warning.abilityeffects.github_link": "§6➔ Klicke HIER, um die neueste Version von Github herunterzuladen ➔",
+  "warning.abilityeffects.github_hover": "Klicken, um die GitHub-Releases in deinem Browser zu öffnen und die Client-Mod herunterzuladen.",
+
+  "ability.abilityeffects.max": "Du kannst maximal 2 Fähigkeiten gleichzeitig aktivieren",
+  "ability.abilityeffects.not_found": "Fähigkeit nicht gefunden: %s",
+  "ability.abilityeffects.dont_have_ability": "Du besitzt diese Fähigkeit nicht",
+  "ability.abilityeffects.ability_slot_empty": "Dieser Fähigkeitsplatz ist leer",
+
+  "key.category.abilityeffects.abilityeffects": "Fähigkeitseffekte",
+  "key.abilityeffects.special_ability_key_1": "Spezialfähigkeit Taste 1",
+  "key.abilityeffects.special_ability_key_2": "Spezialfähigkeit Taste 2",
+
+  "craftablescreen.abilityeffects.title": "Herstellbare Fähigkeiten",
+  "playerselectionscreen.abilityeffects.title": "Spielerauswahl",
+  "playerselectionscreen.abilityeffects.no_players_online": "Es sind keine Spieler online",
+  "screen.abilityeffects.close": "Schließen",
+
+  "item.abilityeffects.speed_ability_item": "Geschwindigkeits Fähigkeit",
+  "item.abilityeffects.fire_resistance_ability_item": "Feuerresistenz Fähigkeit",
+  "item.abilityeffects.health_boost_ability_item": "Lebensschub Fähigkeit",
+  "item.abilityeffects.feather_falling_ability_item": "Federfall Fähigkeit",
+  "item.abilityeffects.strength_ability_item": "Stärke Fähigkeit",
+  "item.abilityeffects.mining_ability_item": "Eile Fähigkeit",
+  "item.abilityeffects.warden_ability_item": "Warden Fähigkeit",
+  "item.abilityeffects.wither_ability_item": "Wither Fähigkeit",
+  "item.abilityeffects.pull_ability_item": "Anziehungs Fähigkeit",
+  "item.abilityeffects.tracker_ability_item": "Tracker Fähigkeit",
+  "item.abilityeffects.ender_dragon_ability_item": "Enderdrachen Fähigkeit"
+}

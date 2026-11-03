@@ -1,0 +1,67 @@
+{
+  "command.abilityeffects.help.header": "§6§l=== Guía Oficial de AbilityEffects ===",
+  "command.abilityeffects.help.intro": "§7¡Bienvenido! Este mod te otorga habilidades únicas mediante objetos especiales no acumulables. Una vez utilizados, se vinculan a ti de forma permanente hasta que los sueltes o los pierdas.",
+
+  "command.abilityeffects.help.section.mechanics": "§e§l1. Mecánicas principales y controles:",
+  "command.abilityeffects.help.keybind1": " §b• [Tecla %s] §7- Activa el efecto especial de tu §aprimera habilidad activa§7.",
+  "command.abilityeffects.help.keybind2": " §b• [Tecla %s] §7- Activa el efecto especial de tu §asegunda habilidad activa§7 (por ejemplo, abre el menú del rastreador de jugadores).",
+  "command.abilityeffects.help.pvp_drop": " §b• Penalización por muerte en PvP §7- Si te mata otro jugador, ¡perderás §cal azar una habilidad activa§7 en forma de objeto!",
+  "command.abilityeffects.help.void_save": " §b• Reembolso del vacío §7- Si un objeto de habilidad cae al vacío, el contador global del servidor se restablece automáticamente para que pueda volver a fabricarse.",
+
+  "command.abilityeffects.help.section.commands": "§e§l2. Comandos disponibles:",
+  "command.abilityeffects.help.cmd_craftable": " §b• /ability craftable §7- Abre un menú que muestra los límites globales de objetos y las fabricaciones restantes.",
+  "command.abilityeffects.help.cmd_drop": " §b• /ability drop <habilidad> §7- Desactiva de forma segura una habilidad activa y te la devuelve como objeto.",
+  "command.abilityeffects.help.cmd_help": " §b• /ability help §7- Muestra esta completa documentación técnica.",
+
+  "command.abilityeffects.help.section.abilities": "§e§l3. Índice técnico de habilidades:",
+  "command.abilityeffects.help.ability.meta": "§6▶ §l%s §r§7[Tiempo de recarga: §e%ss§7 | Suministro global: §a%s/%s§7]",
+
+  "command.abilityeffects.help.ability.speed_ability.desc": "   §7- §ePasiva: §7+50%% de velocidad de movimiento.\n   §7- §aActiva: §7Te impulsa hacia adelante en la dirección de la mirada con un sonido personalizado.",
+  "command.abilityeffects.help.ability.fire_resistance_ability.desc": "   §7- §ePasiva: §7Inmunidad completa a todo daño por fuego y lava.\n   §7- §aActiva: §7Provoca una enorme explosión de fuerza 5.0 (sin daño para ti) y evapora toda el agua cercana en un radio de 10 bloques.",
+  "command.abilityeffects.help.ability.health_boost_ability.desc": "   §7- §ePasiva: §7Te otorga un +25%% de corazones máximos permanentes.\n   §7- §aActiva: §7Cura instantáneamente 4 corazones completos (8.0 HP).",
+  "command.abilityeffects.help.ability.feather_falling_ability.desc": "   §7- §ePasiva: §7Anula por completo todo el daño por caída.\n   §7- §aActiva: §7Te impulsa hacia lo alto del aire con una ráfaga de carga de viento.",
+  "command.abilityeffects.help.ability.strength_ability.desc": "   §7- §ePasiva: §7Añade +3.0 de daño de ataque base de forma dinámica.\n   §7- §aActiva: §7Otorga el efecto de Fuerza II durante 10 segundos.",
+  "command.abilityeffects.help.ability.mining_ability.desc": "   §7- §ePasiva: §7+30%% de eficiencia en minería.\n   §7- §aActiva: §7Activa la ruptura instantánea durante 10 segundos (no se aplica a la obsidiana ni a la piedra base).",
+  "command.abilityeffects.help.ability.warden_ability.desc": "   §7- §ePasiva: §7Silencia tus pasos por completo; cancela todas las vibraciones de bloques e impulsos de sensores de sculk.\n   §7- §aActiva: §7Dispara un devastador ráfaga sónica de hasta 20 bloques de alcance, infligiendo 13.0 de daño y empuje.",
+  "command.abilityeffects.help.ability.wither_ability.desc": "   §7- §ePasiva: §7Atacar a los objetivos tiene un 10%% de probabilidad de infligir el efecto de Wither durante 20 segundos.\n   §7- §aActiva: §7Dispara una ráfaga horizontal de 4 peligrosas calaveras de Wither simultáneamente.",
+  "command.abilityeffects.help.ability.pull_ability.desc": "   §7- §ePasiva: §7Atacar a los jugadores tiene un 10%% de probabilidad de atraerlos hacia ti.\n   §7- §aActiva: §7Atrae continuamente a todos los jugadores cercanos en un enorme radio de 50 bloques hacia tu ubicación exacta durante 15 segundos.",
+  "command.abilityeffects.help.ability.tracker_ability.desc": "   §7- §ePasiva: §7Atacar a un jugador le aplica automáticamente el efecto de Brillo durante 60 segundos.\n   §7- §aActiva: §7Abre un menú para seleccionar a un jugador conectado, mostrando sus coordenadas y proyectando un rayo láser rojo dinámico directamente hacia él.",
+  "command.abilityeffects.help.ability.ender_dragon_ability.desc": "   §7- §ePasiva: §7Beber aliento de dragón otorga efectos dinámicos masivos (regeneración, resistencia, resistencia al fuego, absorción) y devuelve la botella de cristal.\n   §7- §aActiva: §7Invoca un Dragón del End montable controlado por la dirección de tu mirada durante 10 segundos.",
+
+  "command.abilityeffects.help.section.info": "§e§l5. Recetas, reglas y Discord:",
+  "command.abilityeffects.help.recipes": " §b• Recetas §7- Todas las recetas de fabricación se encuentran en nuestro servidor de Discord.",
+  "command.abilityeffects.help.discord": " §b• Discord §7- Usa §a/discord§7 para obtener el enlace de invitación.",
+  "command.abilityeffects.help.rules": " §b• Reglas §7- Usa §a/rules§7 para leer las normas oficiales del servidor.",
+
+
+  "warning.abilityeffects.no_client_mod_1": "§c§l[Advertencia] §eNo tienes instalado el mod del lado del cliente",
+  "warning.abilityeffects.no_client_mod_2": "§7Sin él, §cno podrás ver la interfaz de tus habilidades activas (HUD)§7 ni §cpodrás usar las teclas de habilidades especiales§7.",
+  "warning.abilityeffects.github_link": "§6➔ HAZ CLIC AQUÍ PARA DESCARGAR LA ÚLTIMA VERSIÓN DESDE GITHUB ➔",
+  "warning.abilityeffects.github_hover": "Haz clic para abrir los lanzamientos de GitHub en tu navegador y descargar el mod del cliente.",
+
+  "ability.abilityeffects.max": "Puedes activar un máximo de 2 habilidades al mismo tiempo",
+  "ability.abilityeffects.not_found": "Habilidad no encontrada: %s",
+  "ability.abilityeffects.dont_have_ability": "No posees esta habilidad",
+  "ability.abilityeffects.ability_slot_empty": "Esta casilla de habilidad está vacía",
+
+  "key.category.abilityeffects.abilityeffects": "Efectos de habilidad",
+  "key.abilityeffects.special_ability_key_1": "Tecla de habilidad especial 1",
+  "key.abilityeffects.special_ability_key_2": "Tecla de habilidad especial 2",
+
+  "craftablescreen.abilityeffects.title": "Habilidades fabricables",
+  "playerselectionscreen.abilityeffects.title": "Selección de jugador",
+  "playerselectionscreen.abilityeffects.no_players_online": "No hay jugadores conectados",
+  "screen.abilityeffects.close": "Cerrar",
+
+  "item.abilityeffects.speed_ability_item": "Objeto de habilidad de velocidad",
+  "item.abilityeffects.fire_resistance_ability_item": "Objeto de habilidad de resistencia al fuego",
+  "item.abilityeffects.health_boost_ability_item": "Objeto de habilidad de impulso de salud",
+  "item.abilityeffects.feather_falling_ability_item": "Objeto de habilidad de caída de pluma",
+  "item.abilityeffects.strength_ability_item": "Objeto de habilidad de fuerza",
+  "item.abilityeffects.mining_ability_item": "Objeto de habilidad de minería",
+  "item.abilityeffects.warden_ability_item": "Objeto de habilidad de Warden",
+  "item.abilityeffects.wither_ability_item": "Objeto de habilidad de Wither",
+  "item.abilityeffects.pull_ability_item": "Objeto de habilidad de atracción",
+  "item.abilityeffects.tracker_ability_item": "Objeto de habilidad de rastreador",
+  "item.abilityeffects.ender_dragon_ability_item": "Objeto de habilidad de Dragón del End"
+}

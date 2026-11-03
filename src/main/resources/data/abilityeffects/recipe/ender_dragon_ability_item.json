@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:dragon_egg",
+    "D": "minecraft:dragon_breath",
+    "E": "minecraft:elytra"
+  },
+  "pattern": [
+    "EDE",
+    "DAD",
+    "EDE"
+  ],
+  "result": {
+    "id": "abilityeffects:ender_dragon_ability_item"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": "minecraft:echo_shard",
+    "P": "minecraft:silence_armor_trim_smithing_template",
+    "S": "minecraft:sculk_shrieker"
+  },
+  "pattern": [
+    "PEP",
+    "ESE",
+    "PEP"
+  ],
+  "result": {
+    "id": "abilityeffects:warden_ability_item"
+  }
+}

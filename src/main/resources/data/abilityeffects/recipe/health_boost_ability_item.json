@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "minecraft:golden_apple",
+    "C": "minecraft:golden_carrot",
+    "E": "minecraft:enchanted_golden_apple",
+    "G": "minecraft:glistering_melon_slice"
+  },
+  "pattern": [
+    "AEA",
+    "CGC",
+    "ACA"
+  ],
+  "result": {
+    "id": "abilityeffects:health_boost_ability_item"
+  }
+}

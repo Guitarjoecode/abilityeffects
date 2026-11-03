@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "abilityeffects:item/fire_resistance_ability_item"
+  }
+}

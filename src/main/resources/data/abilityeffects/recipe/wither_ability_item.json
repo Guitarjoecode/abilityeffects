@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": "minecraft:nether_star",
+    "S": "minecraft:soul_sand",
+    "W": "minecraft:wither_skeleton_skull"
+  },
+  "pattern": [
+    "WSW",
+    "SNS",
+    "WSW"
+  ],
+  "result": {
+    "id": "abilityeffects:wither_ability_item"
+  }
+}

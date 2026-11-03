@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": "minecraft:rabbit_foot",
+    "P": "minecraft:sugar",
+    "S": "minecraft:diamond_boots"
+  },
+  "pattern": [
+    "HSH",
+    "SPS",
+    "HSH"
+  ],
+  "result": {
+    "id": "abilityeffects:speed_ability_item"
+  }
+}

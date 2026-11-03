@@ -1,0 +1,66 @@
+{
+  "command.abilityeffects.help.header": "§6§l=== AbilityEffects Official Guide ===",
+  "command.abilityeffects.help.intro": "§7Welcome! This mod grants you unique abilities using special items. Once used, they attach to you permanently until dropped or lost.",
+
+  "command.abilityeffects.help.section.mechanics": "§e§l1. Core Mechanics & Controls:",
+  "command.abilityeffects.help.keybind1": " §b• [%s Key] §7- Triggers the active special effect of your §aFirst Active Ability§7.",
+  "command.abilityeffects.help.keybind2": " §b• [%s Key] §7- Triggers the active special effect of your §aSecond Active Ability§7 (e.g., opens Player Tracker GUI).",
+  "command.abilityeffects.help.pvp_drop": " §b• PvP Death Penalty §7- If killed by another player, you will §crandomly lose one active ability§7 as an item drop!",
+  "command.abilityeffects.help.void_save": " §b• Void Refund §7- If an Ability Item falls into the void, the global server counter is automatically refunded so it can be crafted again.",
+
+  "command.abilityeffects.help.section.commands": "§e§l2. Available Commands:",
+  "command.abilityeffects.help.cmd_craftable": " §b• /ability craftable §7- Opens a GUI displaying global item limits and remaining crafts.",
+  "command.abilityeffects.help.cmd_drop": " §b• /ability drop <ability> §7- Safely deactivates an active ability and returns it as an item.",
+  "command.abilityeffects.help.cmd_help": " §b• /ability help §7- Shows this comprehensive technical documentation.",
+
+  "command.abilityeffects.help.section.abilities": "§e§l3. Ability Technical Index:",
+  "command.abilityeffects.help.ability.meta": "§6▶ §l%s §r§7[Cooldown: §e%ss§7 | Global Supply: §a%s/%s§7]",
+
+  "command.abilityeffects.help.ability.speed_ability.desc": "   §7- §ePassive: §7+50% Movement Speed boost.\n   §7- §aActive: §7Launches you forward based on looking direction with custom sound.",
+  "command.abilityeffects.help.ability.fire_resistance_ability.desc": "   §7- §ePassive: §7Complete immunity to all fire and lava damage.\n   §7- §aActive: §7Triggers a massive 5.0-force explosion (no damage to self) and evaporates all nearby water in a 10-block radius.",
+  "command.abilityeffects.help.ability.health_boost_ability.desc": "   §7- §ePassive: §7Gives you +25% permanent Maximum Health slots.\n   §7- §aActive: §7Instantly heals 4 full hearts (8.0 HP).",
+  "command.abilityeffects.help.ability.feather_falling_ability.desc": "   §7- §ePassive: §7Completely negates all fall damage.\n   §7- §aActive: §7Launches you high up into the air with a wind charge burst.",
+  "command.abilityeffects.help.ability.strength_ability.desc": "   §7- §ePassive: §7Adds +3.0 Base Attack Damage dynamically.\n   §7- §aActive: §7Grants temporary Strength II effect for 10 seconds.",
+  "command.abilityeffects.help.ability.mining_ability.desc": "   §7- §ePassive: §7+30% Mining Efficiency boost.\n   §7- §aActive: §7Activates Instant-Break for 10 seconds (does not apply to Obsidian/Bedrock).",
+  "command.abilityeffects.help.ability.warden_ability.desc": "   §7- §ePassive: §7Silences your footsteps completely; cancels all block vibrations and sculk impulses.\n   §7- §aActive: §7Fires a devastating Sonic Boom ray up to 20 blocks, dealing 13.0 damage and knockback.",
+  "command.abilityeffects.help.ability.wither_ability.desc": "   §7- §ePassive: §7Attacking targets has a 10% chance to inflict Wither for 20 seconds.\n   §7- §aActive: §7Shoots a horizontal spread of 4 dangerous Wither Skulls simultaneously.",
+  "command.abilityeffects.help.ability.pull_ability.desc": "   §7- §ePassive: §7Attacking players has a 10% chance to pull them towards you.\n   §7- §aActive: §7Continuously pulls all nearby players within a massive 50-block area towards your exact location for 15 seconds.",
+  "command.abilityeffects.help.ability.tracker_ability.desc": "   §7- §ePassive: §7Attacking a player automatically applies the Glowing effect for 60 seconds.\n   §7- §aActive: §7Opens a GUI to select an online player, showing coordinates and rendering a dynamic red laser beam pointing directly to them.",
+  "command.abilityeffects.help.ability.ender_dragon_ability.desc": "   §7- §ePassive: §7Drinking Dragon's Breath grants massive dynamic buffs (Regen, Resistance, Fire Res, Absorption) and returns the glass bottle.\n   §7- §aActive: §7Summons a rideable Ender Dragon controlled by your view direction for 10 seconds.",
+
+  "command.abilityeffects.help.section.info": "§e§l5. Recipes, Rules & Discord:",
+  "command.abilityeffects.help.recipes": " §b• Recipes §7- All crafting recipes can be found on our Discord server.",
+  "command.abilityeffects.help.discord": " §b• Discord §7- Use §a/discord§7 to get the invite link.",
+  "command.abilityeffects.help.rules": " §b• Rules §7- Use §a/rules§7 to read the official server guidelines.",
+
+  "warning.abilityeffects.no_client_mod_1": "§c§l[Warning] §eYou do not have the client-side mod installed",
+  "warning.abilityeffects.no_client_mod_2": "§7Without it, you §ccannot see your active abilities HUD§7 and §ccannot use Special Ability keys.",
+  "warning.abilityeffects.github_link": "§6➔ Click HERE to download the latest release from Github ➔",
+  "warning.abilityeffects.github_hover": "Click to open GitHub Releases in your browser and download the client mod.",
+
+  "ability.abilityeffects.max": "You can activate a maximum of 2 abilities at the same time",
+  "ability.abilityeffects.not_found": "Ability not found: %s",
+  "ability.abilityeffects.dont_have_ability": "You dont have this ability",
+  "ability.abilityeffects.ability_slot_empty": "This ability slot is empty",
+
+  "key.category.abilityeffects.abilityeffects": "Ability Effects",
+  "key.abilityeffects.special_ability_key_1": "Special Ability key 1",
+  "key.abilityeffects.special_ability_key_2": "Special Ability key 2",
+
+  "craftablescreen.abilityeffects.title": "Craftable Abilities",
+  "playerselectionscreen.abilityeffects.title": "Player Selection",
+  "playerselectionscreen.abilityeffects.no_players_online": "No players are online",
+  "screen.abilityeffects.close": "Close",
+
+  "item.abilityeffects.speed_ability_item": "Speed Ability Item",
+  "item.abilityeffects.fire_resistance_ability_item": "Fire Resistance Ability Item",
+  "item.abilityeffects.health_boost_ability_item": "Health Boost Ability Item",
+  "item.abilityeffects.feather_falling_ability_item": "Feather Falling Ability Item",
+  "item.abilityeffects.strength_ability_item": "Strength Ability Item",
+  "item.abilityeffects.mining_ability_item": "Mining Ability Item",
+  "item.abilityeffects.warden_ability_item": "Warden Ability Item",
+  "item.abilityeffects.wither_ability_item": "Wither Ability Item",
+  "item.abilityeffects.pull_ability_item": "Pull Ability Item",
+  "item.abilityeffects.tracker_ability_item": "Tracker Ability Item",
+  "item.abilityeffects.ender_dragon_ability_item": "Ender Dragon Ability Item"
+}

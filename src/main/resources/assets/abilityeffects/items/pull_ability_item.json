@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "abilityeffects:item/pull_ability_item"
+  }
+}

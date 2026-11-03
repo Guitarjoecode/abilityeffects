@@ -1,0 +1,67 @@
+{
+  "command.abilityeffects.help.header": "§6§l=== Официальный гайд по AbilityEffects ===",
+  "command.abilityeffects.help.intro": "§7Добро пожаловать! Этот мод наделяет вас уникальными способностями с помощью особых несуммируемых предметов. После использования они закрепляются за вами навсегда, пока вы их не выбросите или не потеряете.",
+
+  "command.abilityeffects.help.section.mechanics": "§e§l1. Основные механики и управление:",
+  "command.abilityeffects.help.keybind1": " §b• [Клавиша %s] §7- Активирует особый эффект вашей §aпервой активной способности§7.",
+  "command.abilityeffects.help.keybind2": " §b• [Клавиша %s] §7- Активирует особый эффект вашей §aвторой активной способности§7 (например, открывает трекер игроков).",
+  "command.abilityeffects.help.pvp_drop": " §b• PvP-штраф при смерти §7- Если вас убьет другой игрок, вы §cслучайным образом потеряете одну активную способность§7 в виде выпавшего предмета!",
+  "command.abilityeffects.help.void_save": " §b• Возврат из пустоты §7- Если предмет способности упадет в пустоту, глобальный серверный счетчик автоматически восстановится, и предмет можно будет скрафтить снова.",
+
+  "command.abilityeffects.help.section.commands": "§e§l2. Доступные команды:",
+  "command.abilityeffects.help.cmd_craftable": " §b• /ability craftable §7- Открывает интерфейс, показывающий глобальные лимиты предметов и оставшееся количество крафтов.",
+  "command.abilityeffects.help.cmd_drop": " §b• /ability drop <способность> §7- Безопасно деактивирует активную способность и возвращает её в виде предмета.",
+  "command.abilityeffects.help.cmd_help": " §b• /ability help §7- Показывает эту подробную техническую документацию.",
+
+  "command.abilityeffects.help.section.abilities": "§e§l3. Технический индекс способностей:",
+  "command.abilityeffects.help.ability.meta": "§6▶ §l%s §r§7[Перезарядка: §e%s сек.§7 | Мировой запас: §a%s/%s§7]",
+
+  "command.abilityeffects.help.ability.speed_ability.desc": "   §7- §eПассивно: §7+50% к скорости передвижения.\n   §7- §aАктивно: §7Подбрасывает вас вперед в направлении взгляда с уникальным звуковым эффектом.",
+  "command.abilityeffects.help.ability.fire_resistance_ability.desc": "   §7- §eПассивно: §7Полный иммунитет к любому урону от огня и лавы.\n   §7- §aАктивно: §7Вызывает мощный взрыв силой 5.0 (без урона себе) и испаряет всю воду в радиусе 10 блоков.",
+  "command.abilityeffects.help.ability.health_boost_ability.desc": "   §7- §eПассивно: §7Навсегда дает +25% к максимальному запасу здоровья.\n   §7- §aАктивно: §7Мгновенно исцеляет 4 полных сердца (8.0 HP).",
+  "command.abilityeffects.help.ability.feather_falling_ability.desc": "   §7- §eПассивно: §7Полностью нейтрализует любой урон от падения.\n   §7- §aАктивно: §7Выталкивает вас высоко в воздух мощным потоком ветра.",
+  "command.abilityeffects.help.ability.strength_ability.desc": "   §7- §eПассивно: §7Динамически добавляет +3.0 к базовому урону.\n   §7- §aАктивно: §7Дарует временный эффект «Сила II» на 10 секунд.",
+  "command.abilityeffects.help.ability.mining_ability.desc": "   §7- §eПассивно: §7+30% к эффективности добычи.\n   §7- §aАктивно: §7Включает мгновенное разрушение блоков на 10 секунд (не работает на обсидиан и бедрок).",
+  "command.abilityeffects.help.ability.warden_ability.desc": "   §7- §eПассивно: §7Полностью заглушает ваши шаги, блокируя вибрации и реакцию скалк-сенсоров.\n   §7- §aАктивно: §7Выпускает сокрушительный звуковой удар на расстояние до 20 блоков, наносящий 13.0 урона и отбрасывающий врагов.",
+  "command.abilityeffects.help.ability.wither_ability.desc": "   §7- §eПассивно: §7При атаке целей есть 10% шанс иссушить их на 20 секунд.\n   §7- §aАктивно: §7Выпускает веер из 4 опасных черепов иссушителя одновременно по горизонтали.",
+  "command.abilityeffects.help.ability.pull_ability.desc": "   §7- §eПассивно: §7При атаке игроков есть 10% шанс притянуть их к себе.\n   §7- §aАктивно: §7В течение 15 секунд непрерывно притягивает всех игроков в огромном радиусе 50 блоков к вашему точному местоположению.",
+  "command.abilityeffects.help.ability.tracker_ability.desc": "   §7- §eПассивно: §7Атака по игроку автоматически накладывает на него эффект свечения на 60 секунд.\n   §7- §aАктивно: §7Открывает меню для выбора онлайн-игрока, показывая его координаты и проводя к нему динамический красный лазерный луч.",
+  "command.abilityeffects.help.ability.ender_dragon_ability.desc": "   §7- §eПассивно: §7Питье драконьего дыхания дает мощные динамические эффекты (регенерация, сопротивление, огнестойкость, поглощение) и возвращает пустую бутылочку.\n   §7- §aАктивно: §7Призывает оседлаемого Эндер-дракона на 10 секунд, управляемого направлением вашего взгляда.",
+
+  "command.abilityeffects.help.section.info": "§e§l5. Рецепты, правила и Discord:",
+  "command.abilityeffects.help.recipes": " §b• Рецепты §7- Все рецепты крафта можно найти на нашем сервере Discord.",
+  "command.abilityeffects.help.discord": " §b• Discord §7- Используйте §a/discord§7, чтобы получить ссылку-приглашение.",
+  "command.abilityeffects.help.rules": " §b• Правила §7- Используйте §a/rules§7, чтобы прочитать официальные правила сервера.",
+
+
+  "warning.abilityeffects.no_client_mod_1": "§c§l[Внимание] §eУ вас не установлен клиентский мод",
+  "warning.abilityeffects.no_client_mod_2": "§7Без него вы §cне сможете видеть индикатор способностей (HUD)§7 и §cне сможете использовать клавиши способностей§7.",
+  "warning.abilityeffects.github_link": "§6➔ НАЖМИТЕ ЗДЕСЬ, ЧТОБЫ СКАЧАТЬ ПОСЛЕДНЮЮ ВЕРСИЮ С GITHUB ➔",
+  "warning.abilityeffects.github_hover": "Нажмите, чтобы открыть раздел релизов на GitHub в браузере и скачать клиентский мод.",
+
+  "ability.abilityeffects.max": "Вы можете активировать максимум 2 способности одновременно",
+  "ability.abilityeffects.not_found": "Способность не найдена: %s",
+  "ability.abilityeffects.dont_have_ability": "У вас нет этой способности",
+  "ability.abilityeffects.ability_slot_empty": "Этот слот способности пуст",
+
+  "key.category.abilityeffects.abilityeffects": "Эффекты способностей",
+  "key.abilityeffects.special_ability_key_1": "Клавиша особой способности 1",
+  "key.abilityeffects.special_ability_key_2": "Клавиша особой способности 2",
+
+  "craftablescreen.abilityeffects.title": "Доступные для крафта способности",
+  "playerselectionscreen.abilityeffects.title": "Выбор игрока",
+  "playerselectionscreen.abilityeffects.no_players_online": "Нет игроков в сети",
+  "screen.abilityeffects.close": "Закрыть",
+
+  "item.abilityeffects.speed_ability_item": "Предмет способности скорости",
+  "item.abilityeffects.fire_resistance_ability_item": "Предмет способности огнестойкости",
+  "item.abilityeffects.health_boost_ability_item": "Предмет способности повышения здоровья",
+  "item.abilityeffects.feather_falling_ability_item": "Предмет способности невесомости",
+  "item.abilityeffects.strength_ability_item": "Предмет способности силы",
+  "item.abilityeffects.mining_ability_item": "Предмет способности спешки",
+  "item.abilityeffects.warden_ability_item": "Предмет способности Вардена",
+  "item.abilityeffects.wither_ability_item": "Предмет способности Иссушителя",
+  "item.abilityeffects.pull_ability_item": "Предмет способности притяжения",
+  "item.abilityeffects.tracker_ability_item": "Предмет способности трекера",
+  "item.abilityeffects.ender_dragon_ability_item": "Предмет способности Эндер-дракона"
+}

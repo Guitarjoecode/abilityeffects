@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "abilityeffects:item/fire_resistance_ability_item"
+  }
+}

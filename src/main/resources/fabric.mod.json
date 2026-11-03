@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "abilityeffects",
+	"version": "${version}",
+	"name": "Ability Effects",
+	"description": "This is a mod which grants you unique ability items with powerful passive and active effects. Active abilities bind permanently to you unless lost in PvP",
+	"authors": [
+		"Guitarjoe"
+	],
+	"contact": {
+		"homepage": "https:/github.com/Guitarjoecode",
+		"sources": "https://github.com/Guitarjoecode/abilityeffects",
+		"issues": "https://github.com/Guitarjoecode/abilityeffects/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/abilityeffects/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.guitarjoe.abilityeffects.AbilityEffects"
+		],
+		"client": [
+			"net.guitarjoe.abilityeffects.client.AbilityEffectsClient"
+		]
+	},
+	"mixins": [
+		"abilityeffects.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

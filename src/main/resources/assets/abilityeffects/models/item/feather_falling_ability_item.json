@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "abilityeffects:item/feather_falling_ability_item"
+  }
+}

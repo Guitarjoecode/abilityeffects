@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "abilityeffects:item/warden_ability_item"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "net.guitarjoe.abilityeffects.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "BlockBehaviourMixin",
+    "CrafterBlockMixin",
+    "CraftingMenuMixin",
+    "EntityMixin",
+    "LivingEntityMixin",
+    "ServerPlayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}
