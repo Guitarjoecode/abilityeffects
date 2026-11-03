@@ -31,6 +31,7 @@ import net.minecraft.commands.synchronization.SingletonArgumentInfo;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.permissions.Permissions;
 import net.minecraft.world.item.Item;
 
 import java.util.*;
@@ -78,7 +79,7 @@ public class AbilityEffects implements ModInitializer {
 		CommandRegistrationCallback.EVENT.register(AbilityCommand::register);
 
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-			dispatcher.register(Commands.literal("removeabilty")
+			dispatcher.register(Commands.literal("removeabilty").requires(source -> source.permissions().hasPermission(Permissions.COMMANDS_OWNER))
 					.executes(context -> {
 						ServerPlayer player = context.getSource().getPlayer();
 						for (Ability ability : Ability.values()) {
@@ -91,7 +92,7 @@ public class AbilityEffects implements ModInitializer {
 			);
 		});
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-			dispatcher.register(Commands.literal("craftreset")
+			dispatcher.register(Commands.literal("craftreset").requires(source -> source.permissions().hasPermission(Permissions.COMMANDS_OWNER))
 					.executes(context -> {
 						TimesCraftedSavedData savedData = TimesCraftedSavedData.get(context.getSource().getLevel());
 
