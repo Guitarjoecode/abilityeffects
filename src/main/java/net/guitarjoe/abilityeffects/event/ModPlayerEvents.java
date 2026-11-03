@@ -57,7 +57,7 @@ public class ModPlayerEvents {
                 player.sendSystemMessage(Component.translatable("warning.abilityeffects.no_client_mod_1"));
                 player.sendSystemMessage(Component.translatable("warning.abilityeffects.no_client_mod_2"));
 
-                String url = "https://github.com/Guitarjoecode";
+                String url = "https://github.com/Guitarjoecode/abilityeffects/releases/latest";
                 Style linkStyle = Style.EMPTY
                         .withClickEvent(new ClickEvent.OpenUrl(URI.create(url)))
                         .withColor(ChatFormatting.GREEN);
