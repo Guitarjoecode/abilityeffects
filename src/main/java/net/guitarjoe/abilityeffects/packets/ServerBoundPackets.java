@@ -5,8 +5,7 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.guitarjoe.abilityeffects.ability.Ability;
 import net.guitarjoe.abilityeffects.ability.util.SpecialAbilityAttributeHandler;
 import net.guitarjoe.abilityeffects.attachment.AttachmentTypes;
-import net.guitarjoe.abilityeffects.packets.packet.AbilityPayloadC2S;
-import net.guitarjoe.abilityeffects.packets.packet.RequestPlayerCoordsPayloadC2S;
+import net.guitarjoe.abilityeffects.packets.packet.*;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.chat.Component;
@@ -31,6 +30,18 @@ public class ServerBoundPackets {
         PayloadTypeRegistry.serverboundPlay().register(
                 RequestPlayerCoordsPayloadC2S.TYPE,
                 RequestPlayerCoordsPayloadC2S.STREAM_CODEC
+        );
+        PayloadTypeRegistry.clientboundPlay().register(
+                SyncAbilitiesPayloadS2C.TYPE,
+                SyncAbilitiesPayloadS2C.STREAM_CODEC
+        );
+        PayloadTypeRegistry.clientboundPlay().register(
+                OpenCraftableScreenPayloadS2C.TYPE,
+                OpenCraftableScreenPayloadS2C.STREAM_CODEC
+        );
+        PayloadTypeRegistry.clientboundPlay().register(
+                SyncTimesCraftedPayloadS2C.TYPE,
+                SyncTimesCraftedPayloadS2C.STREAM_CODEC
         );
 
         ServerPlayNetworking.registerGlobalReceiver(

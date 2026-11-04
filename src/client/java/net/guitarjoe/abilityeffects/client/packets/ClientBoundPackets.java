@@ -13,19 +13,6 @@ import java.util.Map;
 public class ClientBoundPackets {
 
     public static void registerPackets(PayloadTypeRegistry<RegistryFriendlyByteBuf> registry) {
-        PayloadTypeRegistry.clientboundPlay().register(
-                SyncAbilitiesPayloadS2C.TYPE,
-                SyncAbilitiesPayloadS2C.STREAM_CODEC
-        );
-        PayloadTypeRegistry.clientboundPlay().register(
-                OpenCraftableScreenPayloadS2C.TYPE,
-                OpenCraftableScreenPayloadS2C.STREAM_CODEC
-        );
-        PayloadTypeRegistry.clientboundPlay().register(
-                SyncTimesCraftedPayloadS2C.TYPE,
-                SyncTimesCraftedPayloadS2C.STREAM_CODEC
-        );
-
         ClientPlayNetworking.registerGlobalReceiver(
                 SyncAbilitiesPayloadS2C.TYPE,
                 ClientBoundPackets::handleSyncAbilityPayload

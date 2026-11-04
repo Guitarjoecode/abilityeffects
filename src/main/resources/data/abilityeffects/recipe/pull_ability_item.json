@@ -3,12 +3,13 @@
   "category": "misc",
   "key": {
     "A": "minecraft:anvil",
-    "B": "minecraft:iron_block"
+    "B": "minecraft:iron_block",
+    "M": "abilityeffects:magnet_item"
   },
   "pattern": [
-    "BBB",
+    "MBM",
     "BAB",
-    "BBB"
+    "MBM"
   ],
   "result": {
     "id": "abilityeffects:pull_ability_item"
