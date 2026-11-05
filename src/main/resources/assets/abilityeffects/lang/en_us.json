@@ -42,6 +42,7 @@
   "ability.abilityeffects.not_found": "Ability not found: %s",
   "ability.abilityeffects.dont_have_ability": "You dont have this ability",
   "ability.abilityeffects.ability_slot_empty": "This ability slot is empty",
+  "ability.abilityeffects.already_have": "You already have this ability",
 
   "key.category.abilityeffects.abilityeffects": "Ability Effects",
   "key.abilityeffects.special_ability_key_1": "Special Ability key 1",

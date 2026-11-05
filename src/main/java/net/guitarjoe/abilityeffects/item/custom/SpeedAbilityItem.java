@@ -33,7 +33,7 @@ public class SpeedAbilityItem extends Item {
                     return InteractionResult.FAIL;
                 }
             } else {
-                player.sendSystemMessage(Component.literal("Du hast diese Fähigkeit bereits aktiv!"));
+                player.sendSystemMessage(Component.translatable("ability.abilityeffects.already_have"));
                 return InteractionResult.PASS;
             }
         }

@@ -2,6 +2,7 @@ package net.guitarjoe.abilityeffects.item.custom;
 
 import net.guitarjoe.abilityeffects.ability.Ability;
 import net.guitarjoe.abilityeffects.attachment.handler.AbilityHandler;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -32,7 +33,7 @@ public class MiningAbilityItem extends Item {
                     return InteractionResult.FAIL;
                 }
             } else {
-                player.sendSystemMessage(net.minecraft.network.chat.Component.literal("Du hast diese Fähigkeit bereits aktiv!"));
+                player.sendSystemMessage(Component.translatable("ability.abilityeffects.already_have"));
                 return InteractionResult.PASS;
             }
         }
