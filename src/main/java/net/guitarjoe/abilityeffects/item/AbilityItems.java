@@ -32,7 +32,7 @@ public class AbilityItems {
     public static final Item WITHER_ABILITY_ITEM = registerAbilityItem("wither_ability_item", WitherAbilityItem::new);
     public static final Item ENDER_DRAGON_ABILITY_ITEM = registerAbilityItem("ender_dragon_ability_item", EnderDragonAbilityItem::new);
     
-    public static final Item MAGNET_ITEM = registerItem("magnet_item", Item::new);
+    public static final Item MAGNET_ITEM = registerItem(Item::new);
 
 
     public static final TagKey<DamageType> IMMUNE_DAMAGE_TYPES = TagKey.create(
@@ -59,8 +59,8 @@ public class AbilityItems {
                 function.apply(abilityProperties));
     }
 
-    private static Item registerItem(String name, Function<Item.Properties, Item> function) {
-        return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(AbilityEffects.MOD_ID, name),
-                function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(AbilityEffects.MOD_ID, name)))));
+    private static Item registerItem(Function<Item.Properties, Item> function) {
+        return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(AbilityEffects.MOD_ID, "magnet_item"),
+                function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(AbilityEffects.MOD_ID, "magnet_item")))));
     }
 }
