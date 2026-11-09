@@ -93,7 +93,7 @@ public class PlayerSelectionScreen extends Screen {
 
 
         this.addRenderableWidget(Button.builder(Component.translatable("screen.abilityeffects.close"), button -> {
-                    this.minecraft.setScreen(this.previousScreen);
+                    this.minecraft.gui.setScreen(this.previousScreen);
                 })
                 .bounds(this.width / 2 - 100, this.height - 30, 200, 20)
                 .build());
@@ -103,7 +103,7 @@ public class PlayerSelectionScreen extends Screen {
     private void onPlayerSelected(PlayerInfo selectedPlayer) {
         ClientPlayNetworking.send(new RequestPlayerCoordsPayloadC2S(selectedPlayer.getProfile()));
 
-        this.minecraft.setScreen(null);
+        this.minecraft.gui.setScreen(null);
     }
 
     @Override

@@ -34,7 +34,7 @@ public class ModClientEvents {
 
     public static void addAbilityHudElement(GuiGraphicsExtractor guiGraphicsExtractor, DeltaTracker tracker) {
         Minecraft client = Minecraft.getInstance();
-        if (client.player == null || client.options.hideGui) return;
+        if (client.player == null) return;
 
         Set<Ability> activeAbilities = client.player.getAttachedOrCreate(AttachmentTypes.ACTIVE_ABILITIES, HashSet::new);
         Map<Ability, Integer> cooldowns = client.player.getAttachedOrCreate(AttachmentTypes.COOLDOWNS, HashMap::new);
@@ -114,7 +114,7 @@ public class ModClientEvents {
             if (currentCooldown > 0) {
                 return;
             }
-            client.setScreen(new PlayerSelectionScreen(client.screen));
+            client.gui.setScreen(new PlayerSelectionScreen(client.gui.screen()));
         } else {
             ClientPlayNetworking.send(new AbilityPayloadC2S(slotIndex));
         }

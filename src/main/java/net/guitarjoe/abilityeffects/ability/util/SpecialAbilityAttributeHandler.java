@@ -13,10 +13,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.projectile.hurtingprojectile.WitherSkull;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.ExplosionDamageCalculator;
@@ -168,7 +165,7 @@ public class SpecialAbilityAttributeHandler {
 
             double dX = target.getX() - player.getX();
             double dZ = target.getZ() - player.getZ();
-            target.knockback(0.5D, -dX, -dZ);
+            target.knockback(0.5D, -dX, -dZ, player.damageSources().playerAttack(player), 0.4F);
 
             double distanceToTarget = startPos.distanceTo(target.getEyePosition());
             for (int i = 1; i < (int) distanceToTarget; i++) {
@@ -206,7 +203,7 @@ public class SpecialAbilityAttributeHandler {
         double lateralZ = lookX * 0.4;
 
         for (int i = 0; i < 4; i++) {
-            WitherSkull skull = new WitherSkull(EntityType.WITHER_SKULL, serverLevel) {
+            WitherSkull skull = new WitherSkull(EntityTypes.WITHER_SKULL, serverLevel) {
                 @Override
                 public void tick() {
                     super.tick();

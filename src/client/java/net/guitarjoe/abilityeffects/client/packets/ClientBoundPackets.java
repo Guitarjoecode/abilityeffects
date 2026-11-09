@@ -32,12 +32,12 @@ public class ClientBoundPackets {
     }
 
     private static void handleOpenCraftableScreenPayload(OpenCraftableScreenPayloadS2C payload, ClientPlayNetworking.Context context) {
-        context.client().execute(() -> context.client().setScreen(new CraftableAbilitiesScreen(payload.craftedMap())));
+        context.client().execute(() -> context.client().gui.setScreen(new CraftableAbilitiesScreen(payload.craftedMap())));
     }
 
     private static void handleSyncTimesCraftedPayload(SyncTimesCraftedPayloadS2C payload, ClientPlayNetworking.Context context) {
         context.client().execute(() -> {
-            if (context.client().screen instanceof CraftableAbilitiesScreen screen) {
+            if (context.client().gui.screen() instanceof CraftableAbilitiesScreen screen) {
                 Map<String, Integer> freshMap = new HashMap<>(payload.craftedMap());
                 screen.setCraftedMap(freshMap);
                 screen.rebuildScreen();
