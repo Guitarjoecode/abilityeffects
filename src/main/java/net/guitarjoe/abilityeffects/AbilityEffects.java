@@ -1,6 +1,5 @@
 package net.guitarjoe.abilityeffects;
 
-import com.mojang.brigadier.Command;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.ArgumentTypeRegistry;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
@@ -13,11 +12,9 @@ import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
-import net.guitarjoe.abilityeffects.ability.Ability;
-import net.guitarjoe.abilityeffects.attachment.AttachmentTypes;
-import net.guitarjoe.abilityeffects.attachment.handler.AbilityHandler;
 import net.guitarjoe.abilityeffects.command.AbilityArgument;
 import net.guitarjoe.abilityeffects.command.AbilityCommand;
+import net.guitarjoe.abilityeffects.command.AdminAbilityCommand;
 import net.guitarjoe.abilityeffects.entity.RidableEnderDragonEntity;
 import net.guitarjoe.abilityeffects.entity.RidableEnderDragonRegister;
 import net.guitarjoe.abilityeffects.event.ModPlayerEvents;
@@ -26,12 +23,10 @@ import net.guitarjoe.abilityeffects.item.AbilityItems;
 import net.guitarjoe.abilityeffects.limitedcrafting.TimesCraftedSavedData;
 import net.guitarjoe.abilityeffects.packets.ServerBoundPackets;
 import net.guitarjoe.abilityeffects.packets.packet.SyncTimesCraftedPayloadS2C;
-import net.minecraft.commands.Commands;
 import net.minecraft.commands.synchronization.SingletonArgumentInfo;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.permissions.Permissions;
 import net.minecraft.world.item.Item;
 
 import java.util.*;
@@ -77,32 +72,7 @@ public class AbilityEffects implements ModInitializer {
 		FabricDefaultAttributeRegistry.register(RidableEnderDragonRegister.RIDABLE_ENDER_DRAGON, RidableEnderDragonEntity.createAttributes());
 
 		CommandRegistrationCallback.EVENT.register(AbilityCommand::register);
-
-		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-			dispatcher.register(Commands.literal("removeabilty").requires(source -> source.permissions().hasPermission(Permissions.COMMANDS_OWNER))
-					.executes(context -> {
-						ServerPlayer player = context.getSource().getPlayer();
-						for (Ability ability : Ability.values()) {
-							AbilityHandler.toggleAbility(ability, player, false);
-						}
-						player.setAttached(AttachmentTypes.COOLDOWNS, new HashMap<>());
-
-						return Command.SINGLE_SUCCESS;
-					})
-			);
-		});
-		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-			dispatcher.register(Commands.literal("craftreset").requires(source -> source.permissions().hasPermission(Permissions.COMMANDS_OWNER))
-					.executes(context -> {
-						TimesCraftedSavedData savedData = TimesCraftedSavedData.get(context.getSource().getLevel());
-
-						savedData.map.clear();
-						savedData.setDirty();
-
-						return 1;
-					})
-			);
-		});
+		CommandRegistrationCallback.EVENT.register(AdminAbilityCommand::register);
 	}
 
 	public static void syncTimesCrafted(ServerLevel level, TimesCraftedSavedData savedData) {
