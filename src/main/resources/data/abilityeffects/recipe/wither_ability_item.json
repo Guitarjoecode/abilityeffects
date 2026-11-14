@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "abilityeffects_crafting_tab",
   "key": {
     "N": "minecraft:nether_star",
     "S": "minecraft:soul_sand",

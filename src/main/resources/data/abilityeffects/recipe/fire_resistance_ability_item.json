@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "abilityeffects_crafting_tab",
   "key": {
     "B": "minecraft:blaze_rod",
     "F": "minecraft:flint_and_steel",

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "abilityeffects_crafting_tab",
   "key": {
     "A": "minecraft:dragon_egg",
     "D": "minecraft:dragon_breath",

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "abilityeffects_crafting_tab",
   "key": {
     "E": "minecraft:echo_shard",
     "P": "minecraft:silence_armor_trim_smithing_template",

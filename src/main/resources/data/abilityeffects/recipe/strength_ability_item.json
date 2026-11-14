@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "abilityeffects_crafting_tab",
   "key": {
     "A": "minecraft:iron_axe",
     "B": "minecraft:blaze_powder",

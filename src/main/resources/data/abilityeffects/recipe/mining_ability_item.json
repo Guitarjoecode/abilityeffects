@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "abilityeffects_crafting_tab",
   "key": {
     "D": "minecraft:diamond_pickaxe",
     "N": "minecraft:netherite_pickaxe",
