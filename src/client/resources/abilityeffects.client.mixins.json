@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "net.guitarjoe.abilityeffects.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "SearchRecipeBookCategoryMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "CraftingRecipeBookComponentMixin"
+  ]
+}

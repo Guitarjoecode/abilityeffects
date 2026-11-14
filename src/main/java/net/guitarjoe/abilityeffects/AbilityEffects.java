@@ -20,6 +20,7 @@ import net.guitarjoe.abilityeffects.entity.RidableEnderDragonRegister;
 import net.guitarjoe.abilityeffects.event.ModPlayerEvents;
 import net.guitarjoe.abilityeffects.event.ModServerEvents;
 import net.guitarjoe.abilityeffects.item.AbilityItems;
+import net.guitarjoe.abilityeffects.limitedcrafting.AbilityRecipeBookCategories;
 import net.guitarjoe.abilityeffects.limitedcrafting.TimesCraftedSavedData;
 import net.guitarjoe.abilityeffects.packets.ServerBoundPackets;
 import net.guitarjoe.abilityeffects.packets.packet.SyncTimesCraftedPayloadS2C;
@@ -46,6 +47,7 @@ public class AbilityEffects implements ModInitializer {
 
 		ServerBoundPackets.registerPackets(PayloadTypeRegistry.serverboundPlay());
 		RidableEnderDragonRegister.registerEntity();
+		AbilityRecipeBookCategories.init();
 
 		ServerTickEvents.END_SERVER_TICK.register(ModServerEvents::onEndServerTick);
 

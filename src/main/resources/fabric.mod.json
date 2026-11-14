@@ -24,7 +24,11 @@
 		]
 	},
 	"mixins": [
-		"abilityeffects.mixins.json"
+		"abilityeffects.mixins.json",
+		{
+			"config": "abilityeffects.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.20.1",

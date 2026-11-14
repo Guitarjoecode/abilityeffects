@@ -1,4 +1,4 @@
-package net.guitarjoe.abilityeffects.mixin;
+package net.guitarjoe.abilityeffects.mixin.entity;
 
 import net.guitarjoe.abilityeffects.ability.Ability;
 import net.guitarjoe.abilityeffects.attachment.handler.AbilityHandler;

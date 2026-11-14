@@ -1,0 +1,5 @@
+classTweaker  v2  official
+
+extend-enum  net/minecraft/world/inventory/RecipeBookType  ABILITYEFFECTS_RECIPE_BOOK_TYPE
+extend-enum net/minecraft/world/item/crafting/CraftingBookCategory ABILITYEFFECTS_CRAFTING_TAB
+extend-enum net/minecraft/data/recipes/RecipeCategory ABILITYEFFECTS_RECIPE_CATEGORY

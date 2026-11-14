@@ -5,10 +5,14 @@
   "mixins": [
     "BlockBehaviourMixin",
     "CrafterBlockMixin",
-    "CraftingMenuMixin",
-    "EntityMixin",
-    "LivingEntityMixin",
-    "ServerPlayerMixin",
+    "crafting.CraftingBookCategoryMixin",
+    "crafting.CraftingRecipeMixin",
+    "crafting.CraftingRecipeMixin",
+    "crafting.RecipeCategoryMixin",
+    "entity.EntityMixin",
+    "entity.LivingEntityMixin",
+    "entity.ServerPlayerMixin",
+    "crafting.CraftingMenuMixin",
     "SlotMixin"
   ],
   "injectors": {
