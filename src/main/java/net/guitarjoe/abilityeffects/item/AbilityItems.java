@@ -16,10 +16,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.component.DamageResistant;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
 
 public class AbilityItems {
+    public static final List<Item> ALL_ABILITY_ITEMS = new ArrayList<>();
+
     public static final Item HEALTH_BOOST_ABILITY_ITEM = registerAbilityItem("health_boost_ability_item", HealthBoostAbilityItem::new);
     public static final Item FEATHER_FALLING_ABILITY_ITEM = registerAbilityItem("feather_falling_ability_item", FeatherFallingAbilityItem::new);
     public static final Item FIRE_RESISTANCE_ABILITY_ITEM = registerAbilityItem("fire_resistance_ability_item", FireresistanceAbilityItem::new);
@@ -32,7 +36,7 @@ public class AbilityItems {
     public static final Item WITHER_ABILITY_ITEM = registerAbilityItem("wither_ability_item", WitherAbilityItem::new);
     public static final Item ENDER_DRAGON_ABILITY_ITEM = registerAbilityItem("ender_dragon_ability_item", EnderDragonAbilityItem::new);
     
-    public static final Item MAGNET_ITEM = registerItem("magnet_item", Item::new);
+    public static final Item MAGNET_ITEM = registerItem("magnet_item");
 
 
     public static final TagKey<DamageType> IMMUNE_DAMAGE_TYPES = TagKey.create(
@@ -55,11 +59,19 @@ public class AbilityItems {
         Item.Properties abilityProperties = AbilityProperties(new Item.Properties().setId(
                 ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(AbilityEffects.MOD_ID, name))));
 
-        return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(AbilityEffects.MOD_ID, name),
-                function.apply(abilityProperties));
+        Item registeredItem = Registry.register(
+                BuiltInRegistries.ITEM,
+                Identifier.fromNamespaceAndPath(AbilityEffects.MOD_ID, name),
+                function.apply(abilityProperties)
+        );
+        ALL_ABILITY_ITEMS.add(registeredItem);
+
+        return registeredItem;
     }
 
-    private static Item registerItem(String name, Function<Item.Properties, Item> function) {
+    private static Item registerItem(String name) {
+        Function<Item.Properties, Item> function = Item::new;
+
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(AbilityEffects.MOD_ID, name),
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(AbilityEffects.MOD_ID, name)))));
     }
