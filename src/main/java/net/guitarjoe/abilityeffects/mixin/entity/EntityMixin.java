@@ -7,6 +7,7 @@ import net.guitarjoe.abilityeffects.limitedcrafting.TimesCraftedSavedData;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -17,8 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.injection.At;
-import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
@@ -26,6 +26,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class EntityMixin {
     @Shadow
     public abstract Level level();
+
+    @Shadow
+    public abstract boolean isInLava();
+
+    @Shadow
+    public abstract void resetFallDistance();
 
     @Inject(
             method = "walkingStepSound",
@@ -108,6 +114,15 @@ public abstract class EntityMixin {
                         AbilityEffects.syncTimesCrafted(serverLevel, savedData);
                     }
                 }
+            }
+        }
+    }
+
+    @Inject(method = "baseTick", at = @At("TAIL"))
+    private void abilityeffects$noLavaFallDamage(CallbackInfo ci) {
+        if (this.isInLava() && (Object) this instanceof ServerPlayer player) {
+            if (AbilityHandler.hasability(Ability.FIRE_RESISTANCE_ABILITY, player)) {
+                this.resetFallDistance();
             }
         }
     }
